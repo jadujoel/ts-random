@@ -1,0 +1,24 @@
+{
+  "name": "@jadujoel/ts-random",
+  "module": "dist/index.js",
+  "type": "module",
+  "version": "0.0.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "bun build index.ts --outdir=dist --sourcemap=linked --minify"
+  },
+  "files": [
+    "dist",
+    "index.ts",
+    "README.md",
+    "tsconfig.json"
+  ]
+}
