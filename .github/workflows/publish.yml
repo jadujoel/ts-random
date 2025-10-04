@@ -17,4 +17,4 @@ jobs:
       uses: oven-sh/setup-bun@v2
 
     - name: Publish Package
-      run: bun publish
+      run: bun publish --auth-type legacy
