@@ -25,16 +25,4 @@ jobs:
       uses: oven-sh/setup-bun@v2
 
     - name: Publish Package
-      run: bun publish --access public
-
-    - name: Configure
-      uses: actions/configure-pages@v5
-
-    - name: Upload
-      uses: actions/upload-pages-artifact@v4
-      with:
-        path: 'dist'
-
-    - name: Deploy
-      uses: actions/deploy-pages@v4
-      id: deployment
+      run: bun publish
